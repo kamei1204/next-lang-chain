@@ -112,7 +112,7 @@ const Main = () => {
                 const messageTaskResult = { type: "task-result", text: responseText.trim() };
                 messageHandler(messageTaskResult);
 
-                //api/createエンドポイントにGPTに向けタスクの作成を依頼
+                //api/createエンドポイントにGPTに向けタスク作成を依頼
                 const responseCreate = await axios.post(
                     "/api/create",
                     //目的、タスクリスト名,最後のタスク,回答を送信
